@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+
+* {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#header {
+    padding: 2em;
+    background-color: rgb(27 30 33);
+    margin: 2em 0;
+}
+
+h1 {
+    padding: 2%;
+    color: coral;
+}
+
+
+
+/* #main {
+    width: 70%;
+    margin: 0 15% 0 15%;
+    background-color: transparent;
+} */
+
+
+#main div {
+    margin: 0 auto;
+    padding: 30px;
+    color: #fff;
+    text-align: initial;
+    border-bottom: 2px solid coral;
+}
+
+
+div p {
+    font-size: 1rem;
+}
+
+small {
+    text-decoration: underline;
+    color: rgb(188, 189, 187);
+    cursor: pointer;
+}
+
+img {
+    width: 70%;
+    height: auto;
+}

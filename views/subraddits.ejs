@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') %>
+<%- include('partials/navbar.ejs') %>
+    <div class="container">
+        <div id="header">
+            <h1>browsing the <%= name %> subraddiet</h1>
+            <p><b>subscribers: </b><%=  sub  %></p>
+            <p><b>about: </b><%=  description  %></p>
+        </div>
+        <div id="main">
+            <% for (post of posts) { %>
+                <div>
+                    <p>puplished by <small>@<%= post.author %></small></p>
+                    <h3><%= post.title  %></h3>
+                    <% if (post.img) { %>
+                        <img src="<%= post.img %>" alt="">
+                    <% } %>
+                </div>
+            <% } %>
+        </div>
+    </div>
+<%- include('partials/footer.ejs') %>
