@@ -10,7 +10,7 @@
             <% for (post of posts) { %>
                 <div>
                     <p>puplished by <small>@<%= post.author %></small></p>
-                    <h3><%= post.title  %></h3>
+                    <h3 id="post-title"><%= post.title  %></h3>
                     <% if (post.img) { %>
                         <img src="<%= post.img %>" alt="">
                     <% } %>

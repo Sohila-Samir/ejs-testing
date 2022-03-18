@@ -10,7 +10,6 @@ app.use(express.static(path.join(__dirname, '/puplic')))
 app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs')
 app.listen(port, () => {
-    console.log(`lestining on port: ${port}`);
 })
 
 app.get('/', (req, res) => {
@@ -29,13 +28,12 @@ app.get('/cond/:name', (req, res) => {
 })
 
 app.get('/looping', (req, res) => {
-    let arr1 = ["L. for ma W", "S. for ma lil s", "L. for ma lil d"];
+    let arr1 = ["how deep", "is", "your love ...?"];
     res.render('loops', { names : arr1 });
 })
 
 app.get('/r/:subraddit', (req, res) => {
     let { subraddit } = req.params;
     let radditData =  serverJsonData[subraddit];
-    console.log( radditData );
     res.render('subraddits', { ...radditData })
 })
